@@ -1,0 +1,41 @@
+@import 'normalize';
+
+body {
+  font-family: Georgia, Utopia, Charter, serif;
+  font-size: 1.2em;
+}
+
+.wrapper {
+  max-width: 575px;
+  margin: 5vh auto 0;
+  padding: 1em 1em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: 400;
+  margin: 0;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+a {
+  $link: #2980b9;
+  color: $link;
+
+  &:hover {
+    color: darken($link, 20%);
+    text-decoration: none;
+  }
+}

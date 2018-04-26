@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.5
+
+script:
+  - jekyll build
+  - htmlproofer --only-4xx --check-html ./_site/index.html
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

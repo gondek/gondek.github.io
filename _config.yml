@@ -1,0 +1,9 @@
+sass:
+  style: compressed
+  sass_dir: _scss
+exclude: ['README.md', 'CNAME', 'Gemfile']
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: base
