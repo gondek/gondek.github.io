@@ -1,37 +1,43 @@
 @import 'normalize';
 
+$font: #111;
+$font-light: #555;
+$background: #eee;
+
 body {
+  background: $background;
+  color: $font;
   font-family: Georgia, Utopia, Charter, serif;
   font-size: 1.2em;
-}
-
-.wrapper {
-  max-width: 575px;
-  margin: 5vh auto 0;
-  padding: 1em 1em 0;
 }
 
 .center {
   text-align: center;
 }
 
-h1, h2 {
-  font-weight: 400;
-  margin: 0;
-  line-height: 1em;
+.wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2em;
 }
 
-h1 {
-  font-size: 2em;
+.home {
+  &.wrapper {
+    max-width: 590px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
 }
 
+h1,
 h2 {
-  text-transform: uppercase;
-  font-size: 1.2em;
+  font-weight: 400;
 }
 
 a {
-  $link: #2980b9;
+  $link: #325386;
   color: $link;
 
   &:hover {
